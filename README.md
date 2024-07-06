@@ -35,4 +35,4 @@ Using any `find_files_v*.py` file as `find_files.py`, you can run:
 ```
 python find_files.py "dir/**/*.cpp" "resources/images/*.png"
 ```
-will find all `.cpp`-files in directory `dir` and all subdirectories of `dir` recursively and also all `.png`-files in directory `resources/images`.
+will find all `.cpp`-files in all subdirectories of `dir` recursively (but not in `dir`) and also all `.png`-files in directory `resources/images`.
