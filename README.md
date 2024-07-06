@@ -26,7 +26,7 @@ The "find_files" scripts are distributed under the GNU General Public License v3
 ## Usage
 
 Usage: `python find_files_v*.py [PATTERN]...`  
-Repeatedly output the list of files matching the provided patterns.
+Outputs the list of files matching the provided patterns.
 
 ## Examples
 
