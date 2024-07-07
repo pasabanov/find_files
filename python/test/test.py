@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 import subprocess
 
 
@@ -26,12 +29,14 @@ def args_to_string(args):
 
 
 def main():
-	
+
 	# Tests show that v2 and v3 print blank line if they do not find any files.
 	# v1 does not print anything.
 	do_strip_output = True
 
-	scripts = ['../find_files_v1.py', '../find_files_v2.py', '../find_files_v3.py']
+	scripts = ['../find_files_v1.py',
+			   '../find_files_v2.py',
+			   '../find_files_v3.py']
 
 	args_list = [
 		['test_data/**/*.cpp', 'test_data/**/*.h'],
