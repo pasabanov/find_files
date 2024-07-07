@@ -1,0 +1,1 @@
+import sys,glob;print('\n'.join(['\n'.join(glob.glob(w,recursive=True))for w in sys.argv[1:]]))

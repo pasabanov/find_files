@@ -4,11 +4,13 @@
 
 The "find_files" scripts are small utilities designed to list files that match a given list of wildcards.
 
-- **find_files_v1.sh** (66 bytes):
-    - Prints **ABSOLUTE** path.
+- **find_files_canonical.sh** (66 bytes):
+    - Finds files matching the specified patterns and prints the **CANONICAL** paths.
 
-- **find_files_v2.sh** (62 bytes):
-    - Prints **RELATIVE** paths.
+- **find_files_relative.sh** (62 bytes):
+    - Finds files matching the specified patterns and prints the **RELATIVE** paths.
+
+- The scripts with suffix `_x` after name are executable.
 
 The scripts are useful for finding files with specific extensions or patterns in directories and their subdirectories.
 
@@ -22,12 +24,12 @@ The "find_files" scripts are distributed under the GNU General Public License v3
 
 ## Usage
 
-Usage: `bash find_files_v*.sh [PATTERN]...`  
+Usage: `bash find_files_*.sh [PATTERN]...`  
 Outputs the list of files matching the provided patterns.
 
 ## Examples
 
-Using any `find_files_v*.sh` file as `find_files.sh`, you can run:
+Using any `find_files_*.sh` file as `find_files.sh`, you can run:
 
 ```
 bash find_files.sh "dir/**/*.cpp" "resources/images/*.png"

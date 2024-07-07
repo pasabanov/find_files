@@ -4,18 +4,15 @@
 
 The "find_files" scripts are small utilities designed to list files that match a given list of wildcards.
 
-- **find_files_v1.py** (68 bytes):
-    - Finds files matching the specified patterns and does not print anything if no files are found.
+- **find_files_canonical.py** (104 bytes):
+    - Finds files matching the specified patterns and prints the **CANONICAL** paths.
 
-- **find_files_v2.py** (67 bytes):
-    - Finds files matching the specified patterns and prints a blank line if no files are found.
+- **find_files_relative.py** (83 bytes):
+    - Finds files matching the specified patterns and prints the **RELATIVE** paths.
 
-- **find_files_v3.py** (68 bytes):
-    - Similar to **find_files_v2.py**, this script finds files matching the specified patterns and prints a blank line if no files are found.
+- The scripts with suffix `_x` after name are executable.
 
 The scripts are useful for finding files with specific extensions or patterns in directories and their subdirectories.
-
-The scripts print out the **RELATIVE** paths.
 
 ## Authors
 
@@ -27,12 +24,12 @@ The "find_files" scripts are distributed under the GNU General Public License v3
 
 ## Usage
 
-Usage: `python find_files_v*.py [PATTERN]...`  
+Usage: `python find_files_*.py [PATTERN]...`  
 Outputs the list of files matching the provided patterns.
 
 ## Examples
 
-Using any `find_files_v*.py` file as `find_files.py`, you can run:
+Using any `find_files_*.py` file as `find_files.py`, you can run:
 
 ```
 python find_files.py "dir/**/*.cpp" "resources/images/*.png"
