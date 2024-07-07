@@ -1,0 +1,1 @@
+ARGV.each{|p|puts Dir[p]}

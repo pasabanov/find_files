@@ -1,0 +1,1 @@
+ARGV.each{|p|Dir.glob(p){|f|puts File.realpath(f)}}
