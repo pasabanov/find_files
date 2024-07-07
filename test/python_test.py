@@ -34,9 +34,9 @@ def main():
 	# v1 does not print anything.
 	do_strip_output = True
 
-	scripts = ['../find_files_v1.py',
-			   '../find_files_v2.py',
-			   '../find_files_v3.py']
+	scripts = ['../python/find_files_v1.py',
+			   '../python/find_files_v2.py',
+			   '../python/find_files_v3.py']
 
 	args_list = [
 		['test_data/**/*.cpp', 'test_data/**/*.h'],
