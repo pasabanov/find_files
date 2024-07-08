@@ -1,1 +1,1 @@
-ARGV.each{|p|Dir.glob(p){|f|puts File.realpath(f)}}
+puts ARGV.map{|p|Dir[p].map{|f|File.realpath(f)}}

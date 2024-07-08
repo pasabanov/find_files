@@ -1,1 +1,1 @@
-ARGV.each{|p|puts Dir[p]}
+puts ARGV.map{|p|Dir[p]}
