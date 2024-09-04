@@ -14,14 +14,6 @@ The "find_files" scripts are small utilities designed to list files that match a
 
 The scripts are useful for finding files with specific extensions or patterns in directories and their subdirectories.
 
-## Authors
-
-- Petr Alexandrovich Sabanov <pasabanov@murena.io> (2024-07-07)
-
-## License
-
-The "find_files" scripts are distributed under the GNU General Public License v3.0. Additional information about the license can be found on the [official website](https://www.gnu.org/licenses/gpl-3.0.html).
-
 ## Usage
 
 Usage: `bash find_files_*.rb [PATTERN]...`  
@@ -35,3 +27,22 @@ Using any `find_files_*.rb` file as `find_files.rb`, you can run:
 ruby find_files.rb "dir/**/*.cpp" "resources/images/*.png"
 ```
 will find all `.cpp`-files in `dir` and all subdirectories of `dir` recursively and also all `.png`-files in directory `resources/images`.
+
+## License
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+## Copyright
+
+2024 Petr Alexandrovich Sabanov
